@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "57c45136-1670-48f8-b640-09de16058f42",
+		"name": "Upload Documents",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37427735"
+	},
+	"item": [
+		{
+			"name": "docUpload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": [
+								"/C:/Users/hari9/Downloads/Srikanth G.docx",
+								"/C:/Users/hari9/Downloads/Afroz Resume-Salesforce.pdf",
+								"/C:/Users/hari9/Downloads/applicationForm_13495889.pdf",
+								"/C:/Users/hari9/Downloads/Sreekanth[Springboot Developer].pdf",
+								"/C:/Users/hari9/Downloads/Afroz Resume.docx",
+								"/C:/Users/hari9/Downloads/Siva Shankar K_backend developer_7799510299.pdf"
+							]
+						},
+						{
+							"key": "document",
+							"value": "for Testi",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
